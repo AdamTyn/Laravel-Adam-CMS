@@ -82,43 +82,43 @@ server
 ## CMS前台
  - 初始化数据以后，可以在浏览器中输入 **Nginx** 配置文件中设置过的 '**server_name**'，即可看到如下所示的 **CMS** 前台页面；
 
-![Home](Home.png)
+![home](./others/home.png)
 ## CMS后台
  - 由于本 **CMS** 并没有涉及到子域名路由，只是简单添加了一个 '**/admin**' 路由组，所以只需要在浏览器中输入'**server_name**'加上 '**/admin**' 即可进入CMS后台的登录页；
 
-![login](login.png)
+![login](./others/login.png)
  - 如果是通过上述 '**cms.sql**' 初始化数据库数据，那么就会默认生成一个 **超级管理员（superman）** 和一个 **普通管理员（testman）**，其初始密码都是 **123456**；保证登录信息输入正确之后，即可进入后台管理页面；
 
-![admin](admin.png)
+![admin](./others/admin.png)
  - 本 **CMS** 可以对前台页面内容进行基本的管理操作，具体有以下功能：
  1. 配置前台页面的主要内容，包括每个页面的 '**置顶图片**'、'**置顶标题**'、'**置顶描述内容**'；
 
-![page](page.png)
+![page](./others/page.png)
  2. 对 '**服务内容**' 相关信息的添加、删除及更新；
 
-![service](service.png)
+![service](./others/service.png)
  3. 添加、删除、更新 '**最新动态**' 的内容；
 
-![news](news.png)
+![news](./others/news.png)
  4. 添加、删除、更新 '**优秀案例**' 的内容；
 
-![work](work.png)
+![work](./others/work.png)
  5. 添加、删除、更新 '**招聘信息**' 的内容；
 
-![job](job.png)
+![job](./others/job.png)
  6. 对 '**合作伙伴**' 的添加、删除及更新；
 
-![mate](mate.png)
+![mate](./others/mate.png)
  - 当然，如果使用 **超级管理员（superman）** 登录后台，就可以对子管理员进行添加、删除、更新；
 
-![userlist](userlist.png)
+![userlist](./others/userlist.png)
 
-![useradd](useradd.png)
+![useradd](./others/useradd.png)
  - 为了能够更好地分析 **CMS** 前台网站的使用情况以及访问流量，在 **CMS** 后台中还包含后台的 '**操作日志**' 以及网站访问数据的 '**统计图表**'（一周的统计情况）；
 
-![log](log.png)
+![log](./others/log.png)
 
-![data](data.png)
+![data](./others/data.png)
 ## 优化 & 改进
  - 由于 **Laravel** 框架严密的封装性和高内聚架构，其Web性能一直为人所诟病，但是本 **CMS** 只是作为官网的管理系统，对于整体的性能要求较低，只要访问者开启了浏览器的 **Cookie** 之后，体验也是能够接受；
  - 整个 **CMS** 前端采用了 **Amaze UI** 的模板，很大程度上限制了页面的可修改性，在之后的更新将会对前端模板的样式进行仔细分解，保证 **CMS** 前台页面的每一处都可以动态修改；
