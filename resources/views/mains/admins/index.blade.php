@@ -1,0 +1,10 @@
+@extends('layouts.admins.frame')
+@section('slider')
+@include('layouts.admins.sliders.index')
+@endsection
+@section('content')
+@include('layouts.admins.contents.index')
+@endsection
+@section('script')
+@include('layouts.admins.script')
+@endsection

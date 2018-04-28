@@ -1,0 +1,10 @@
+@extends('layouts.admins.frame')
+@section('slider')
+@include('layouts.admins.sliders.systems.log')
+@endsection
+@section('content')
+@include('layouts.admins.contents.systems.log')
+@endsection
+@section('script')
+@include('layouts.admins.script')
+@endsection

@@ -1,0 +1,5 @@
+# dir
+vendor/
+storage/*.key
+.env
+# file
